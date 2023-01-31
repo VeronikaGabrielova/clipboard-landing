@@ -1,0 +1,133 @@
+:root {
+  --primarybtnck: hsl(171, 66%, 44%);
+  --secondarybtnck: hsl(233, 100%, 69%);
+  --headingsck: hsl(210, 10%, 33%);
+  --paragraphck: hsl(201, 11%, 66%);
+  --fontfamily: "Bai Jamjuree", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 768px;
+  text-align: center;
+  font-family: var(--fontfamily);
+}
+
+.background-header {
+  background-image: url(/images/bg-header-mobile.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  padding: 50px 30px 0 30px;
+  text-align: center;
+}
+.headings {
+  color: var(--headingsck);
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.paragraphs {
+  color: var(--paragraphck);
+
+  margin-bottom: 50px;
+}
+
+.buttons {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.buttons__a {
+  display: block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: whitesmoke;
+  border-radius: 30px;
+}
+
+.buttons__a--primary {
+  background-color: var(--primarybtnck);
+  box-shadow: 0px 13px 35px -19px rgba(38, 186, 164, 1);
+  border-right: 1px solid hsl(171, 65%, 38%);
+  border-bottom: 3px solid hsl(171, 65%, 38%);
+  border-left: 1px solid hsl(171, 65%, 38%);
+}
+.buttons__a--primary:hover,
+.buttons__a--primary:focus {
+  background-color: rgb(38, 186, 164, 0.7);
+}
+.buttons__a--secondary {
+  background-color: var(--secondarybtnck);
+  box-shadow: 0px 13px 35px -19px var(--secondarybtnck);
+  border-right: 1px solid hsl(233, 90%, 63%);
+  border-bottom: 3px solid hsl(233, 90%, 63%);
+  border-left: 1px solid hsl(233, 90%, 63%);
+}
+.buttons__a--secondary:hover,
+.buttons__a--secondary:focus {
+  background-color: rgb(97, 115, 255, 0.7);
+}
+.page-padding {
+  padding: 50px 40px 0 40px;
+}
+.size-img {
+  max-width: 300px;
+}
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+  margin-bottom: 50px;
+}
+.companies__img {
+  max-width: 150px;
+}
+.bg-footer {
+  background-color: rgb(159, 171, 178, 0.1);
+  margin-top: 150px;
+}
+.footer {
+  padding: 40px 30px 20px 30px;
+}
+.footer-logo {
+  width: 45px;
+}
+
+.footer-nav {
+  padding: 0;
+  list-style: none;
+}
+.footer-nav__item {
+  margin-top: 20px;
+}
+.footer-nav__link {
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+}
+.footer-nav__link:hover,
+.footer-nav__link:focus {
+  color: var(--primarybtnck);
+}
+.social {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
